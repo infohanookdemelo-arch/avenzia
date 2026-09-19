@@ -1,0 +1,2125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Brand Metadata -->
+  <title>AVENZIA — Creative, Digital, Technology & AI Agency</title>
+  <meta name="description" content="AVENZIA is a global creative technology agency specializing in branding, web development, SaaS, digital products, AI automation and intelligent business solutions.">
+  <meta name="keywords" content="Creative agency, Digital agency, Web development agency, AI automation agency, AI automation services, AI business automation, SaaS development, Web application development, UI UX agency, E-commerce development, Digital marketing agency">
+  <meta name="author" content="AVENZIA">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AVENZIA — Creative, Digital, Technology & AI Agency">
+  <meta property="og:description" content="We build brands, digital experiences, intelligent systems and AI-powered solutions for ambitious businesses worldwide.">
+  <meta property="og:image" content="assets/logo-original.png">
+  <meta property="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Reading Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+
+  <!-- ==========================================================================
+       SECTION 3: STICKY BLUR HEADER
+       ========================================================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container header-inner">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="header-logo" aria-label="AVENZIA Home">
+        <img src="assets/logo-dark.png" alt="AVENZIA — Creative • Digital • Agency" id="headerLogoDark">
+        <img src="assets/logo-light.png" alt="AVENZIA — Creative • Digital • Agency" id="headerLogoLight" style="display: none;">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#ai-automation" class="nav-link">AI Automation</a>
+        <a href="#solutions" class="nav-link">Solutions</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#industries" class="nav-link">Industries</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Global Actions -->
+      <div class="header-actions">
+        <!-- Currency & Region Dropdown -->
+        <div class="global-selector-wrap">
+          <button type="button" class="header-currency-btn" id="globalSelectorBtn" aria-label="Select Region and Currency">
+            <span id="currentCurrencyLabel">🌐 EN | USD</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor"><path d="M5 6L0 0h10L5 6z"/></svg>
+          </button>
+          
+          <div class="global-dropdown" id="globalDropdown">
+            <div class="dropdown-section-title">Select Currency</div>
+            <div class="dropdown-options-grid">
+              <button type="button" class="currency-option" data-currency="USD">USD ($)</button>
+              <button type="button" class="currency-option" data-currency="PKR">PKR (₨)</button>
+              <button type="button" class="currency-option" data-currency="EUR">EUR (€)</button>
+              <button type="button" class="currency-option" data-currency="AED">AED (د.إ)</button>
+              <button type="button" class="currency-option" data-currency="GBP">GBP (£)</button>
+            </div>
+
+            <div class="dropdown-section-title">Global Region</div>
+            <div class="dropdown-options-grid">
+              <button type="button" class="region-option selected" data-region="us">🇺🇸 USA</button>
+              <button type="button" class="region-option" data-region="pk">🇵🇰 Pakistan</button>
+              <button type="button" class="region-option" data-region="ca">🇨🇦 Canada</button>
+              <button type="button" class="region-option" data-region="uk">🇬🇧 UK</button>
+              <button type="button" class="region-option" data-region="ae">🇦🇪 UAE</button>
+              <button type="button" class="region-option" data-region="eu">🇪🇺 Europe</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary Header CTA -->
+        <a href="#contact" class="btn btn-primary btn-sm d-none d-md-inline-flex">START A PROJECT →</a>
+
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="menu-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem;">
+      <span style="font-family:var(--font-display); font-weight:800; font-size:1.25rem; color:#fff;">AVENZIA</span>
+      <button type="button" id="mobileCloseBtn" style="background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#ai-automation">AI Automation</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#work">Work</a>
+      <a href="#industries">Industries</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="mobile-footer-actions">
+      <a href="#contact" class="btn btn-gold" style="width:100%;">START A PROJECT →</a>
+      <a href="https://wa.me/923432782604" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light" style="width:100%;">WhatsApp: +92 343 2782604</a>
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       SECTION 4: HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Hero Copy -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">CREATIVE • DIGITAL • AGENCY</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span>WE BUILD</span>
+          <span class="text-gradient-champagne">WHAT'S NEXT.</span>
+        </h1>
+
+        <div class="hero-supporting">
+          Creative. Digital. AI. Technology. Built for ambitious businesses worldwide.
+        </div>
+
+        <p class="hero-description">
+          AVENZIA combines strategy, design, technology and artificial intelligence to build powerful brands, digital experiences and intelligent business systems.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary">START A PROJECT →</a>
+          <a href="#services" class="btn btn-secondary">EXPLORE OUR SERVICES</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value">100%</span>
+            <span class="metric-label">Scalable Systems</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">6+</span>
+            <span class="metric-label">Global Markets</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">24/7</span>
+            <span class="metric-label">Intelligent Automation</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual (3D Architectural Geometry + Dynamic Overlay) -->
+      <div class="hero-visual-frame">
+        <img src="assets/hero_architecture.jpg" alt="AVENZIA Futuristic Architecture & Design Monolith" class="hero-visual-img">
+        <canvas id="heroCanvas" class="hero-canvas-interactive"></canvas>
+        <div class="hero-visual-overlay"></div>
+        <div class="hero-floating-tag">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C5A880" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span>INTERSECTION: CREATIVITY + AI + TECHNOLOGY</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 5: GLOBAL TRUST SECTION
+       ========================================================================== -->
+  <section class="global-trust-section">
+    <div class="container global-trust-inner">
+      <div class="trust-eyebrow">CREATIVE TECHNOLOGY FOR A GLOBAL MARKET</div>
+      
+      <div class="trust-regions-strip">
+        <div class="region-item"><span>🇵🇰</span> Pakistan</div>
+        <div class="region-item"><span>🇺🇸</span> United States</div>
+        <div class="region-item"><span>🇨🇦</span> Canada</div>
+        <div class="region-item"><span>🇬🇧</span> United Kingdom</div>
+        <div class="region-item"><span>🇦🇪</span> UAE</div>
+        <div class="region-item"><span>🇪🇺</span> Europe</div>
+      </div>
+
+      <div class="trust-supporting-line">
+        BRANDING • DIGITAL PRODUCTS • AI AUTOMATION • TECHNOLOGY
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 6: SERVICES ("WHAT WE DO" - 10 CORE SERVICES)
+       ========================================================================== -->
+  <section class="services-section section-padding" id="services">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">CAPABILITIES</div>
+        <h2 class="section-title">WHAT WE DO</h2>
+        <p class="section-subtitle">
+          Creative thinking. Digital execution. Intelligent automation. We deliver end-to-end digital excellence for ambitious brands and scalable businesses.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- 01 Branding -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">01</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">BRANDING</h3>
+            <p class="service-card-desc">Brand identity, visual systems, logo design, guidelines and complete brand experiences.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 02 Web Development -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">02</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">WEB DEVELOPMENT</h3>
+            <p class="service-card-desc">High-performance websites designed for modern businesses with sub-second speeds.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 03 Web Applications -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">03</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">WEB APPLICATIONS</h3>
+            <p class="service-card-desc">Custom web applications, client portals and bespoke business platforms built for scale.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 04 SaaS Products -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">04</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">SAAS PRODUCTS</h3>
+            <p class="service-card-desc">Scalable SaaS platforms, dashboards, portals, multi-tenant systems and digital products.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 05 UI/UX Design -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">05</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">UI/UX DESIGN</h3>
+            <p class="service-card-desc">Modern interfaces and user experiences focused on usability, conversion and emotional resonance.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 06 E-Commerce -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">06</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">E-COMMERCE</h3>
+            <p class="service-card-desc">High-converting e-commerce experiences, automated checkout systems and digital stores.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 07 Social Media -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">07</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">SOCIAL MEDIA</h3>
+            <p class="service-card-desc">Content strategy, creative production, channel management and data-backed social growth.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 08 Digital Marketing -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">08</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">DIGITAL MARKETING</h3>
+            <p class="service-card-desc">SEO, performance marketing, paid campaigns, conversion optimization and customer acquisition.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 09 Creative Design -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <span class="service-number">09</span>
+            <div class="service-icon-wrap">
+              <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">CREATIVE DESIGN</h3>
+            <p class="service-card-desc">Graphic design, advertising creatives, presentations, campaign assets and digital content.</p>
+          </div>
+          <a href="#contact" class="service-card-link">Explore Service →</a>
+        </div>
+
+        <!-- 10 AI Automation -->
+        <div class="service-card" style="border-color: var(--color-champagne); background: #ffffff;">
+          <div class="service-card-top">
+            <span class="service-number" style="color: var(--color-champagne);">10</span>
+            <div class="service-icon-wrap" style="background-color: var(--color-text-primary); color: #fff;">
+              <svg width="22" height="22" fill="none" stroke="#C5A880" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+          </div>
+          <div>
+            <h3 class="service-card-title">AI AUTOMATION</h3>
+            <p class="service-card-desc">AI-powered workflows, intelligent assistants, business process automation and custom AI systems.</p>
+          </div>
+          <a href="#ai-automation" class="service-card-link" style="color: var(--color-champagne);">Discover AI Suite →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 7: FEATURED AI AUTOMATION (MAJOR DARK TECHNOLOGY SECTION)
+       ========================================================================== -->
+  <section class="ai-hero-section section-padding" id="ai-automation">
+    <div class="ai-bg-canvas-wrap">
+      <canvas id="aiNetworkCanvas"></canvas>
+    </div>
+
+    <div class="container ai-hero-grid">
+      <div>
+        <div class="section-eyebrow dark-mode">INTELLIGENT BUSINESS ARCHITECTURE</div>
+        <h2 class="ai-hero-title">
+          AUTOMATE THE WORK.<br>
+          <span style="color: var(--color-champagne);">AMPLIFY THE BUSINESS.</span>
+        </h2>
+        <p class="ai-hero-text">
+          We design intelligent AI-powered systems that reduce repetitive work, connect your tools and help businesses operate faster, 24 hours a day, 7 days a week.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:1rem;">
+          <a href="#ai-pricing" class="btn btn-gold">EXPLORE AI AUTOMATION →</a>
+          <a href="#ai-workflow" class="btn btn-outline-light">VIEW SYSTEM PIPELINE</a>
+        </div>
+      </div>
+
+      <div class="ai-hero-visual-card">
+        <img src="assets/ai_network.jpg" alt="AVENZIA AI Neural Infrastructure">
+        <div class="ai-visual-badge">LIVE AI ORCHESTRATION</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 8: AI AUTOMATION SERVICES (12 DEDICATED CARDS)
+       ========================================================================== -->
+  <section class="ai-services-section">
+    <div class="container">
+      
+      <div class="section-header-block" style="text-align: center; max-width: 780px; margin: 0 auto 3.5rem;">
+        <div class="section-eyebrow dark-mode">AI CAPABILITIES DIRECTORY</div>
+        <h2 class="section-title text-dark-inverse">ENTERPRISE AI ARCHITECTURE</h2>
+        <p class="section-subtitle" style="color: var(--color-text-inverse-subtle); margin: 0 auto;">
+          High-precision artificial intelligence modules built directly into your operational stack.
+        </p>
+      </div>
+
+      <div class="ai-services-grid">
+        
+        <!-- 01 AI Chatbots -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI CHATBOTS</h4>
+          <p class="ai-card-desc">Intelligent customer-support and lead-generation assistants for websites, WhatsApp and business platforms.</p>
+        </div>
+
+        <!-- 02 AI Customer Support -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI CUSTOMER SUPPORT</h4>
+          <p class="ai-card-desc">Automate repetitive customer questions, resolve tier-1 inquiries instantly, and escalate smoothly.</p>
+        </div>
+
+        <!-- 03 AI Lead Generation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI LEAD GENERATION</h4>
+          <p class="ai-card-desc">Capture, qualify and route inbound prospective clients automatically without human delay.</p>
+        </div>
+
+        <!-- 04 AI Sales Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI SALES AUTOMATION</h4>
+          <p class="ai-card-desc">Automate follow-ups, lead qualification, proposals and sales workflows through personalized touchpoints.</p>
+        </div>
+
+        <!-- 05 Workflow Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+          </div>
+          <h4 class="ai-card-title">WORKFLOW AUTOMATION</h4>
+          <p class="ai-card-desc">Connect business tools, eradicate manual data transfers, and automate multi-app repetitive tasks.</p>
+        </div>
+
+        <!-- 06 AI Content Systems -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI CONTENT SYSTEMS</h4>
+          <p class="ai-card-desc">AI-assisted content generation, brand voice governance, organization and cross-channel publishing workflows.</p>
+        </div>
+
+        <!-- 07 Document Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+          </div>
+          <h4 class="ai-card-title">DOCUMENT AUTOMATION</h4>
+          <p class="ai-card-desc">Extract, parse, validate and process structured information from complex contracts, invoices and PDFs.</p>
+        </div>
+
+        <!-- 08 AI Business Assistants -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><polyline points="12 9 12 12 13.5 13.5"/></svg>
+          </div>
+          <h4 class="ai-card-title">AI BUSINESS ASSISTANTS</h4>
+          <p class="ai-card-desc">Custom internal AI assistants trained on proprietary company knowledge bases and operational processes.</p>
+        </div>
+
+        <!-- 09 CRM Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4 class="ai-card-title">CRM AUTOMATION</h4>
+          <p class="ai-card-desc">Automate contact lifecycle stages, lead tagging, dynamic notifications and deal progression tracking.</p>
+        </div>
+
+        <!-- 10 Email Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h4 class="ai-card-title">EMAIL AUTOMATION</h4>
+          <p class="ai-card-desc">Intelligent inbound email classification, sentiment analysis, drafts generation and automated follow-ups.</p>
+        </div>
+
+        <!-- 11 WhatsApp Automation -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <h4 class="ai-card-title">WHATSAPP AUTOMATION</h4>
+          <p class="ai-card-desc">Automated customer conversations, catalog sharing, lead qualification, FAQs and transactional notifications.</p>
+        </div>
+
+        <!-- 12 Custom AI Systems -->
+        <div class="ai-service-card">
+          <div class="ai-card-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h4 class="ai-card-title">CUSTOM AI SYSTEMS</h4>
+          <p class="ai-card-desc">Bespoke multi-agent architectures and custom AI-powered integrations engineered for your unique operational model.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 9: AI AUTOMATION WORKFLOW VISUAL (ANIMATED PIPELINE)
+       ========================================================================== -->
+  <section class="ai-workflow-section section-padding" id="ai-workflow">
+    <div class="container">
+      
+      <div class="section-header-block" style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem;">
+        <div class="section-eyebrow dark-mode">REAL-TIME DATA FLOW</div>
+        <h2 class="section-title text-dark-inverse">HOW AVENZIA CONNECTS AI TO YOUR BUSINESS</h2>
+        <p class="section-subtitle" style="color: var(--color-text-inverse-subtle); margin: 0 auto;">
+          We bridge modern artificial intelligence directly with real-world enterprise operations, databases, and customer channels.
+        </p>
+      </div>
+
+      <div class="workflow-container-card">
+        <div class="workflow-pipeline-track">
+          
+          <!-- Node 1: Customer -->
+          <div class="workflow-step-node">
+            <div class="workflow-step-tag">STEP 01</div>
+            <div class="workflow-step-title">CUSTOMER</div>
+            <div class="workflow-step-detail">Inquiry / Action via Web, WhatsApp or Email</div>
+          </div>
+
+          <!-- Connector -->
+          <div class="workflow-connector-line">
+            <div class="connector-pulse-dot"></div>
+          </div>
+
+          <!-- Node 2: AI Agent -->
+          <div class="workflow-step-node">
+            <div class="workflow-step-tag">STEP 02</div>
+            <div class="workflow-step-title">AI AGENT</div>
+            <div class="workflow-step-detail">Contextual Intent Recognition & Natural Reasoning</div>
+          </div>
+
+          <!-- Connector -->
+          <div class="workflow-connector-line">
+            <div class="connector-pulse-dot"></div>
+          </div>
+
+          <!-- Node 3: Automation Engine -->
+          <div class="workflow-step-node">
+            <div class="workflow-step-tag">STEP 03</div>
+            <div class="workflow-step-title">AUTOMATION ENGINE</div>
+            <div class="workflow-step-detail">Business Logic Validation & Orchestration</div>
+          </div>
+
+          <!-- Connector -->
+          <div class="workflow-connector-line">
+            <div class="connector-pulse-dot"></div>
+          </div>
+
+          <!-- Node 4: Business Systems -->
+          <div class="workflow-step-node">
+            <div class="workflow-step-tag">STEP 04</div>
+            <div class="workflow-step-title">BUSINESS SYSTEMS</div>
+            <div class="systems-badge-grid">
+              <span class="sys-tag">CRM</span>
+              <span class="sys-tag">Email</span>
+              <span class="sys-tag">WhatsApp</span>
+              <span class="sys-tag">Database</span>
+              <span class="sys-tag">Website</span>
+            </div>
+          </div>
+
+          <!-- Connector -->
+          <div class="workflow-connector-line">
+            <div class="connector-pulse-dot"></div>
+          </div>
+
+          <!-- Node 5: Automated Result -->
+          <div class="workflow-step-node" style="border-color: var(--color-champagne);">
+            <div class="workflow-step-tag" style="color:#10b981;">FINAL OUTPUT</div>
+            <div class="workflow-step-title">AUTOMATED RESULT</div>
+            <div class="workflow-step-detail">Instant Deal Created, Task Closed & Client Notified</div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 10: AI USE CASES ("WHAT CAN WE AUTOMATE?")
+       ========================================================================== -->
+  <section class="usecases-section section-padding">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow dark-mode">PRACTICAL APPLICATIONS</div>
+        <h2 class="section-title text-dark-inverse">WHAT CAN WE AUTOMATE?</h2>
+        <p class="section-subtitle" style="color: var(--color-text-inverse-subtle);">
+          Proven multi-step automated execution pipelines tailored for key business departments.
+        </p>
+      </div>
+
+      <div class="usecases-grid">
+        
+        <!-- Case 1 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">LEAD MANAGEMENT</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Capture</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Qualify</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Notify</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Follow up</span>
+          </div>
+        </div>
+
+        <!-- Case 2 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">CUSTOMER SUPPORT</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Question</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">AI Response</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Resolution</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Escalation</span>
+          </div>
+        </div>
+
+        <!-- Case 3 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">SALES</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Lead</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Qualification</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Proposal</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Follow-up</span>
+          </div>
+        </div>
+
+        <!-- Case 4 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">OPERATIONS</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Task</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Automation</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Database</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Notification</span>
+          </div>
+        </div>
+
+        <!-- Case 5 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">MARKETING</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Content</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Approval</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Scheduling</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Analytics</span>
+          </div>
+        </div>
+
+        <!-- Case 6 -->
+        <div class="usecase-card">
+          <h3 class="usecase-title">ADMINISTRATION</h3>
+          <div class="usecase-chain">
+            <span class="chain-item">Documents</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Extraction</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Processing</span>
+            <span class="chain-arrow">→</span>
+            <span class="chain-item">Storage</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 11: AI AUTOMATION PRICING
+       ========================================================================== -->
+  <section class="ai-pricing-section section-padding" id="ai-pricing">
+    <div class="container">
+      
+      <div class="section-header-block" style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem;">
+        <div class="section-eyebrow dark-mode">INVESTMENT TIERS</div>
+        <h2 class="section-title text-dark-inverse">AI AUTOMATION SOLUTIONS</h2>
+        <p class="section-subtitle" style="color: var(--color-text-inverse-subtle); margin: 0 auto;">
+          Transparent starter benchmarks convertible in multiple global currencies. Every project is engineered around specific business requirements.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- AI Starter -->
+        <div class="pricing-card">
+          <div>
+            <div class="pricing-tag">TIER 01</div>
+            <h3 class="pricing-title">AI STARTER</h3>
+            <p class="pricing-subtitle">For simple business automation and rapid AI adoption.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="50000">PKR 50,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Basic intelligent chatbot
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Lead capture automation
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Simple single workflow
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Email automation triggers
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-outline-light" style="width:100%;">BUILD MY AI SYSTEM →</a>
+        </div>
+
+        <!-- AI Growth (Featured) -->
+        <div class="pricing-card featured-tier">
+          <div>
+            <div class="pricing-tag">MOST POPULAR • TIER 02</div>
+            <h3 class="pricing-title">AI GROWTH</h3>
+            <p class="pricing-subtitle">For growing businesses requiring integrated automation.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="120000" style="color:var(--color-champagne);">PKR 120,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Dedicated AI business assistant
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Full CRM sync & automation
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Autonomous lead qualification
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                WhatsApp Cloud workflows
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Multiple software integrations
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-gold" style="width:100%;">BUILD MY AI SYSTEM →</a>
+        </div>
+
+        <!-- AI Pro -->
+        <div class="pricing-card">
+          <div>
+            <div class="pricing-tag">TIER 03</div>
+            <h3 class="pricing-title">AI PRO</h3>
+            <p class="pricing-subtitle">For advanced automation across high-velocity systems.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="250000">PKR 250,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Custom multi-model AI workflows
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Multiple business systems unified
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Autonomous AI agents
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Custom analytics dashboards
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-outline-light" style="width:100%;">BUILD MY AI SYSTEM →</a>
+        </div>
+
+        <!-- Enterprise AI -->
+        <div class="pricing-card">
+          <div>
+            <div class="pricing-tag">ENTERPRISE TIER</div>
+            <h3 class="pricing-title">ENTERPRISE AI</h3>
+            <p class="pricing-subtitle">For complex organizations with multi-department systems.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Scope Architecture</div>
+              <div class="pricing-price" style="font-size: 1.5rem;">CUSTOM SOLUTION</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Enterprise-wide automation
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Custom bespoke AI pipelines
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Cross-department security & governance
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Continuous engineering & optimization
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-outline-light" style="width:100%;">REQUEST ENTERPRISE AUDIT →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 12: AI AUTOMATION PROCESS (7 STEPS)
+       ========================================================================== -->
+  <section class="ai-process-section section-padding">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow dark-mode">DEPLOYMENT METHODOLOGY</div>
+        <h2 class="section-title text-dark-inverse">HOW WE AUTOMATE YOUR BUSINESS</h2>
+        <p class="section-subtitle" style="color: var(--color-text-inverse-subtle);">
+          A disciplined, production-grade 7-step engineering roadmap from initial discovery to active optimization.
+        </p>
+      </div>
+
+      <div class="process-grid-7">
+        
+        <div class="process-step-item">
+          <div class="process-step-num">01</div>
+          <h4 class="process-step-title">DISCOVER</h4>
+          <p class="process-step-desc">Understand your business and identify repetitive processes.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">02</div>
+          <h4 class="process-step-title">MAP</h4>
+          <p class="process-step-desc">Map the workflow and identify automation opportunities.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">03</div>
+          <h4 class="process-step-title">DESIGN</h4>
+          <p class="process-step-desc">Design the AI and automation architecture.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">04</div>
+          <h4 class="process-step-title">BUILD</h4>
+          <p class="process-step-desc">Develop and integrate the system across your tools.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">05</div>
+          <h4 class="process-step-title">TEST</h4>
+          <p class="process-step-desc">Test reliability, data security and response precision.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">06</div>
+          <h4 class="process-step-title">LAUNCH</h4>
+          <p class="process-step-desc">Deploy the automation smoothly into your business operations.</p>
+        </div>
+
+        <div class="process-step-item">
+          <div class="process-step-num">07</div>
+          <h4 class="process-step-title">OPTIMIZE</h4>
+          <p class="process-step-desc">Monitor performance telemetry and continuously improve the system.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 13: ABOUT AVENZIA (WHITE SECTION WITH KINETIC MARQUEE)
+       ========================================================================== -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      
+      <div class="about-grid">
+        <div>
+          <div class="section-eyebrow">ABOUT THE AGENCY</div>
+          <h2 class="about-headline">WE ARE AVENZIA.</h2>
+          <p class="about-paragraph-lead">
+            A creative technology agency built at the intersection of strategy, design, development and artificial intelligence.
+          </p>
+          <p class="about-paragraph-sub">
+            We help ambitious businesses build stronger brands, better digital experiences and smarter operations through modern technology and AI-powered automation.
+          </p>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:1.5rem; justify-content:center;">
+          <div style="background:var(--color-bg-subtle); padding:2rem; border-radius:var(--radius-lg); border-left:4px solid var(--color-champagne);">
+            <div style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--color-champagne); letter-spacing:0.1em; margin-bottom:0.5rem;">CORE STATEMENT</div>
+            <p style="font-size:1.125rem; font-weight:600; line-height:1.6; color:var(--color-text-primary);">
+              “We build brands, digital experiences, intelligent systems and AI-powered solutions for ambitious businesses worldwide.”
+            </p>
+          </div>
+          <div style="background:var(--color-bg-subtle); padding:2rem; border-radius:var(--radius-lg); border-left:4px solid var(--color-text-primary);">
+            <div style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--color-text-secondary); letter-spacing:0.1em; margin-bottom:0.5rem;">TRANSFORMATION MANDATE</div>
+            <p style="font-size:0.9375rem; color:var(--color-text-secondary); line-height:1.6;">
+              “From brand identity to AI automation, websites to SaaS products — AVENZIA transforms ideas into scalable digital experiences.”
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Kinetic Marquee -->
+    <div class="about-marquee-wrap">
+      <div class="about-marquee-track">
+        <span class="marquee-word">STRATEGY <span class="marquee-dot"></span></span>
+        <span class="marquee-word">DESIGN <span class="marquee-dot"></span></span>
+        <span class="marquee-word">TECHNOLOGY <span class="marquee-dot"></span></span>
+        <span class="marquee-word">AI <span class="marquee-dot"></span></span>
+        <span class="marquee-word">GROWTH <span class="marquee-dot"></span></span>
+        <span class="marquee-word">STRATEGY <span class="marquee-dot"></span></span>
+        <span class="marquee-word">DESIGN <span class="marquee-dot"></span></span>
+        <span class="marquee-word">TECHNOLOGY <span class="marquee-dot"></span></span>
+        <span class="marquee-word">AI <span class="marquee-dot"></span></span>
+        <span class="marquee-word">GROWTH <span class="marquee-dot"></span></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 14: WHY AVENZIA (6 CORE PILLARS)
+       ========================================================================== -->
+  <section class="why-section section-padding">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">DIFFERENTIATION</div>
+        <h2 class="section-title">WHY AVENZIA</h2>
+        <p class="section-subtitle">
+          Engineered from the ground up for modern businesses that demand both creative distinction and technological horsepower.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="12 8 8 12 12 16 12 8"/></svg>
+          </div>
+          <h3 class="why-card-title">STRATEGY FIRST</h3>
+          <p class="why-card-desc">We solve business problems instead of simply delivering technology. Every engagement begins with commercial alignment.</p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="why-card-title">CREATIVE EXCELLENCE</h3>
+          <p class="why-card-desc">Distinctive visual identities, bespoke design systems and world-class digital experiences that command authority.</p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          </div>
+          <h3 class="why-card-title">MODERN TECHNOLOGY</h3>
+          <p class="why-card-desc">Web, SaaS, cloud applications and intelligent systems constructed with modern, scalable engineering standards.</p>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 class="why-card-title">AI-POWERED</h3>
+          <p class="why-card-desc">Automation designed to reduce repetitive operational work, streamline overhead, and dramatically accelerate throughput.</p>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="why-card-title">GLOBAL MINDSET</h3>
+          <p class="why-card-desc">Solutions designed and battle-tested for businesses operating across international borders and multiple currencies.</p>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="why-card">
+          <div class="why-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg>
+          </div>
+          <h3 class="why-card-title">LONG-TERM PARTNERSHIP</h3>
+          <p class="why-card-desc">We build durable digital systems and ongoing capabilities that continuously evolve with your business growth.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 15: INDUSTRIES ("BUILT FOR MODERN BUSINESS" - 13 SECTORS)
+       ========================================================================== -->
+  <section class="industries-section section-padding" id="industries">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">SECTOR EXPERTISE</div>
+        <h2 class="section-title">BUILT FOR MODERN BUSINESS</h2>
+        <p class="section-subtitle">
+          Tailored digital execution and intelligent automation frameworks adapted to the specific dynamics of 13 modern industries.
+        </p>
+      </div>
+
+      <div class="industries-grid">
+        
+        <div class="industry-card">
+          <h4 class="industry-card-title">Technology</h4>
+          <span class="industry-automation-tag">⚡ System integration + CI/CD</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">SaaS</h4>
+          <span class="industry-automation-tag">⚡ Customer onboarding + support</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">E-commerce</h4>
+          <span class="industry-automation-tag">⚡ Customer support + order workflows</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Fashion & Lifestyle</h4>
+          <span class="industry-automation-tag">⚡ Visual commerce + catalog sync</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Real Estate</h4>
+          <span class="industry-automation-tag">⚡ Lead qualification + WhatsApp automation</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Healthcare</h4>
+          <span class="industry-automation-tag">⚡ Appointment inquiry automation</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Education</h4>
+          <span class="industry-automation-tag">⚡ Student intake + FAQ routing</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Finance</h4>
+          <span class="industry-automation-tag">⚡ Document ingestion + validation</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Hospitality</h4>
+          <span class="industry-automation-tag">⚡ Booking inquiry + guest messaging</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Retail</h4>
+          <span class="industry-automation-tag">⚡ Inventory alert + omnichannel CRM</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Professional Services</h4>
+          <span class="industry-automation-tag">⚡ Proposal generation + calendar sync</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Startups</h4>
+          <span class="industry-automation-tag">⚡ Rapid MVP launch + analytics setup</span>
+        </div>
+
+        <div class="industry-card">
+          <h4 class="industry-card-title">Agencies</h4>
+          <span class="industry-automation-tag">⚡ White-label tech + overflow execution</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 16: DIGITAL SOLUTIONS ("MORE THAN AN AGENCY")
+       ========================================================================== -->
+  <section class="solutions-section section-padding" id="solutions">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">AGENCY ECOSYSTEM</div>
+        <h2 class="section-title">MORE THAN AN AGENCY.<br>WE BUILD DIGITAL SYSTEMS.</h2>
+        <p class="section-subtitle">
+          AVENZIA operates through four specialized international divisions, functioning as a scalable technology partner for modern enterprises.
+        </p>
+      </div>
+
+      <div class="solutions-divisions-grid">
+        
+        <!-- Division 1 -->
+        <div class="division-card">
+          <div>
+            <div class="division-badge">DIVISION 01</div>
+            <h3 class="division-title">AVENZIA STUDIO</h3>
+            <div class="division-focus">Branding & Creative</div>
+            <p class="division-desc">Crafting visionary brand identities, editorial visual systems, art direction, and world-class brand experiences.</p>
+          </div>
+          <div class="division-tags">
+            <span class="div-pill">Identity</span>
+            <span class="div-pill">Guidelines</span>
+            <span class="div-pill">Creative</span>
+          </div>
+        </div>
+
+        <!-- Division 2 -->
+        <div class="division-card">
+          <div>
+            <div class="division-badge">DIVISION 02</div>
+            <h3 class="division-title">AVENZIA DIGITAL</h3>
+            <div class="division-focus">Websites & Digital Experiences</div>
+            <p class="division-desc">Building ultra-fast flagship web destinations, immersive digital experiences, and high-conversion e-commerce engines.</p>
+          </div>
+          <div class="division-tags">
+            <span class="div-pill">Websites</span>
+            <span class="div-pill">Headless</span>
+            <span class="div-pill">UI/UX</span>
+          </div>
+        </div>
+
+        <!-- Division 3 -->
+        <div class="division-card">
+          <div>
+            <div class="division-badge">DIVISION 03</div>
+            <h3 class="division-title">AVENZIA LABS</h3>
+            <div class="division-focus">SaaS & Technology Products</div>
+            <p class="division-desc">Architecting robust web applications, multi-tenant SaaS platforms, internal business portals, and cloud backends.</p>
+          </div>
+          <div class="division-tags">
+            <span class="div-pill">SaaS</span>
+            <span class="div-pill">Web Apps</span>
+            <span class="div-pill">Cloud</span>
+          </div>
+        </div>
+
+        <!-- Division 4 -->
+        <div class="division-card" style="border-color: var(--color-champagne);">
+          <div>
+            <div class="division-badge" style="color:var(--color-champagne);">DIVISION 04</div>
+            <h3 class="division-title">AVENZIA AI</h3>
+            <div class="division-focus">AI Automation & Intelligent Systems</div>
+            <p class="division-desc">Engineering autonomous AI agents, enterprise workflow automation, and custom neural business systems.</p>
+          </div>
+          <div class="division-tags">
+            <span class="div-pill">AI Agents</span>
+            <span class="div-pill">Workflows</span>
+            <span class="div-pill">Bespoke AI</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 17: WORK / CASE STUDIES ("SELECTED WORK")
+       ========================================================================== -->
+  <section class="work-section section-padding" id="work">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">PORTFOLIO STRUCTURE</div>
+        <h2 class="section-title">SELECTED WORK</h2>
+        <p class="section-subtitle">
+          Explore our architecture and execution methodologies across branding, digital products, and intelligent AI automation.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="work-filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">All Projects</button>
+        <button type="button" class="filter-btn" data-filter="branding">Branding</button>
+        <button type="button" class="filter-btn" data-filter="web">Web & Digital</button>
+        <button type="button" class="filter-btn" data-filter="saas">SaaS & Apps</button>
+        <button type="button" class="filter-btn" data-filter="ai">AI Automation</button>
+      </div>
+
+      <!-- Work Cards Grid -->
+      <div class="work-grid">
+        
+        <!-- Project 01 -->
+        <div class="case-card" data-category="branding" data-case-id="proj-1">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">01</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category">Branding</span>
+              <span class="case-num">PROJECT 01</span>
+            </div>
+            <h3 class="case-title">BRAND EXPERIENCE</h3>
+            <p class="case-summary">Global brand identity, visual guidelines, and interactive corporate design system.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">Visual Identity</span>
+              <span class="case-tech-tag">Typography</span>
+              <span class="case-tech-tag">Guidelines</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="case-card" data-category="web" data-case-id="proj-2">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">02</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category">Digital Product</span>
+              <span class="case-num">PROJECT 02</span>
+            </div>
+            <h3 class="case-title">DIGITAL PRODUCT</h3>
+            <p class="case-summary">Executive data dashboard and responsive user experience platform.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">UI/UX</span>
+              <span class="case-tech-tag">TypeScript</span>
+              <span class="case-tech-tag">Dashboard</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+        <!-- Project 03 -->
+        <div class="case-card" data-category="web" data-case-id="proj-3">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">03</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category">E-Commerce</span>
+              <span class="case-num">PROJECT 03</span>
+            </div>
+            <h3 class="case-title">E-COMMERCE</h3>
+            <p class="case-summary">Headless digital commerce storefront with localized international checkout.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">Headless</span>
+              <span class="case-tech-tag">Multi-Currency</span>
+              <span class="case-tech-tag">Shopify</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+        <!-- Project 04 -->
+        <div class="case-card" data-category="saas" data-case-id="proj-4">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">04</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category">Web Application</span>
+              <span class="case-num">PROJECT 04</span>
+            </div>
+            <h3 class="case-title">WEB APPLICATION</h3>
+            <p class="case-summary">Cloud operational portal consolidating multi-department workflows.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">React</span>
+              <span class="case-tech-tag">Node.js</span>
+              <span class="case-tech-tag">PostgreSQL</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+        <!-- Project 05 -->
+        <div class="case-card" data-category="ai" data-case-id="proj-5">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">05</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category" style="color:var(--color-champagne);">AI Automation</span>
+              <span class="case-num">PROJECT 05</span>
+            </div>
+            <h3 class="case-title">AI AUTOMATION</h3>
+            <p class="case-summary">Autonomous 24/7 lead qualification agent connected with WhatsApp & CRM.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">AI Agents</span>
+              <span class="case-tech-tag">WhatsApp API</span>
+              <span class="case-tech-tag">CRM Sync</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+        <!-- Project 06 -->
+        <div class="case-card" data-category="saas" data-case-id="proj-6">
+          <div class="case-preview-box">
+            <span class="case-preview-monogram">06</span>
+          </div>
+          <div class="case-content">
+            <div class="case-meta-top">
+              <span class="case-category">SaaS Platform</span>
+              <span class="case-num">PROJECT 06</span>
+            </div>
+            <h3 class="case-title">SAAS PLATFORM</h3>
+            <p class="case-summary">Multi-tenant enterprise subscription software suite with automated billing.</p>
+            <div class="case-tech-strip">
+              <span class="case-tech-tag">Multi-Tenant</span>
+              <span class="case-tech-tag">Stripe</span>
+              <span class="case-tech-tag">Docker</span>
+            </div>
+            <span class="case-footer-link">View Case Architecture →</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 18: CORE SERVICES PRICING
+       ========================================================================== -->
+  <section class="core-pricing-section section-padding" id="pricing">
+    <div class="container">
+      
+      <div class="section-header-block" style="text-align: center; max-width: 800px; margin: 0 auto 3.5rem;">
+        <div class="section-eyebrow">TRANSPARENT VALUE</div>
+        <h2 class="section-title">CORE AGENCY PACKAGES</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Professional corporate pricing starting points for branding, web development, and digital experiences.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        
+        <!-- Starter -->
+        <div class="core-pricing-card">
+          <div>
+            <div class="pricing-tag">ENTRY TIER</div>
+            <h3 class="pricing-title">STARTER</h3>
+            <p class="pricing-subtitle">Essential digital presence for new ventures and founders.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="35000">PKR 35,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Core brand identity or landing page
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Mobile-optimized responsive layout
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Speed & search engine foundation
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Inquiry contact integration
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">START PROJECT →</a>
+        </div>
+
+        <!-- Growth -->
+        <div class="core-pricing-card featured-tier">
+          <div>
+            <div class="pricing-tag" style="color:var(--color-text-primary);">RECOMMENDED TIER</div>
+            <h3 class="pricing-title">GROWTH</h3>
+            <p class="pricing-subtitle">Full corporate web platform & brand system for established businesses.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="85000">PKR 85,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Complete multi-page corporate website
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Custom design system & typography
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                CMS-ready structure & interactive forms
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Technical SEO & performance tuning
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-primary" style="width:100%;">START PROJECT →</a>
+        </div>
+
+        <!-- Professional -->
+        <div class="core-pricing-card">
+          <div>
+            <div class="pricing-tag">SCALE TIER</div>
+            <h3 class="pricing-title">PROFESSIONAL</h3>
+            <p class="pricing-subtitle">Custom web applications, e-commerce, or complex platforms.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Starting from</div>
+              <div class="pricing-price" data-base-pkr="150000">PKR 150,000</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Full-stack custom web application
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Authentication, user roles & databases
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Payment gateway & API integrations
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Dedicated QA testing & documentation
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">START PROJECT →</a>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="core-pricing-card">
+          <div>
+            <div class="pricing-tag">BESPOKE TIER</div>
+            <h3 class="pricing-title">ENTERPRISE</h3>
+            <p class="pricing-subtitle">Comprehensive corporate transformations & scalable SaaS products.</p>
+            
+            <div class="pricing-amount-box">
+              <div class="pricing-from-label">Tailored Scope</div>
+              <div class="pricing-price" style="font-size: 1.5rem;">CUSTOM</div>
+            </div>
+
+            <ul class="pricing-features">
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Custom multi-tier SaaS platform
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Dedicated engineering pod
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                SLA guarantees & security audits
+              </li>
+              <li>
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/></svg>
+                Executive consultation
+              </li>
+            </ul>
+          </div>
+
+          <a href="#contact" class="btn btn-secondary" style="width:100%;">REQUEST CONSULTATION →</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 19: PAYMENT & TRUST
+       ========================================================================== -->
+  <section class="payment-trust-section">
+    <div class="container">
+      
+      <div class="payment-trust-header">
+        <div class="section-eyebrow">GLOBAL & LOCAL SETTLEMENTS</div>
+        <h3 style="font-size: 2.25rem; font-weight: 850; margin-bottom: 0.5rem; letter-spacing: -0.03em;">SIMPLE. SECURE. GLOBAL.</h3>
+        <p style="color: var(--color-text-secondary); max-width: 620px; margin: 0 auto; font-size: 0.9375rem;">
+          Frictionless international checkout and verified local payment channels engineered for clients worldwide.
+        </p>
+      </div>
+
+      <div class="payment-cards-grid">
+        
+        <!-- 1. Visa -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box">
+            <svg width="42" height="26" viewBox="0 0 54 18" fill="none">
+              <path d="M21 1L14 16.5H9.5L6 4C5.8 3.2 5.6 2.9 5 2.6C3.9 2 2.2 1.5 0.7 1.1L0.8 1H8.1C9.1 1 9.9 1.6 10.1 2.7L12 12.5L16.5 1H21ZM38.6 11.2C38.6 7 32.8 6.7 32.8 4.8C32.8 4.2 33.3 3.6 34.6 3.4C35.2 3.3 36.9 3.2 38.6 4.1L39.3 0.7C38.3 0.4 37.1 0.1 35.5 0.1C31.2 0.1 28.2 2.4 28.2 5.6C28.2 8.1 30.3 9.4 32 10.2C33.6 11 34.2 11.5 34.2 12.3C34.2 13.4 32.8 13.9 31.6 14C29.4 14 28.2 13.4 27.2 12.9L26.5 16.3C27.5 16.8 29.3 17.2 31.3 17.2C35.8 17.2 38.7 15 38.6 11.2ZM49.9 16.5H53.8L50.4 1H46.8C45.9 1 45.2 1.5 44.9 2.2L38.5 16.5H43.1L44 14H49.5L49.9 16.5ZM45.2 10.5L47.5 4.3L48.8 10.5H45.2ZM27.2 1L23.7 16.5H19.3L22.9 1H27.2Z" fill="#1A1F71"/>
+              <path d="M8.3 1H1L0.9 1.2C4.9 2 8.2 4.9 9.3 9.4L8.1 3.1C7.9 2.2 8.3 1.7 8.3 1Z" fill="#F7B600"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Visa Card</span>
+            <span class="payment-card-tag">Credit & Debit Cards</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Instant Clearance</span>
+          </div>
+        </div>
+
+        <!-- 2. Mastercard -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box">
+            <svg width="40" height="26" viewBox="0 0 36 22" fill="none">
+              <circle cx="11" cy="11" r="11" fill="#EB001B"/>
+              <circle cx="25" cy="11" r="11" fill="#F79E1B"/>
+              <path d="M18 3.5A10.97 10.97 0 0 1 22.2 11 10.97 10.97 0 0 1 18 18.5 10.97 10.97 0 0 1 13.8 11 10.97 10.97 0 0 1 18 3.5Z" fill="#FF5F00"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Mastercard</span>
+            <span class="payment-card-tag">Global Card Payments</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> 3D Secure Protection</span>
+          </div>
+        </div>
+
+        <!-- 3. Stripe -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box" style="background:#635BFF; border-color:#635BFF;">
+            <svg width="38" height="24" viewBox="0 0 44 18" fill="none">
+              <path d="M15.3 6.6c0-.8-.6-1.2-1.7-1.2-1.5 0-3.3.5-4.8 1.3V2.7C10.4 2.1 12.3 1.7 13.8 1.7c3.9 0 6.3 1.9 6.3 5.3v10.8h-4.8v-1.6c-1.4 1.3-3.1 1.8-4.7 1.8-3.5 0-5.7-2.3-5.7-5.5 0-4.1 3.4-5.7 8.3-5.7h2.1v-.2zm0 3.8h-1.8c-2.6 0-4.1.9-4.1 2.6 0 1.4 1.1 2.3 2.7 2.3 1.8 0 3.2-1.3 3.2-3V10.4zM0 2.1h4.8v15.6H0V2.1zm22.4 5.6h4.8v10h-4.8v-10zm0-5.6h4.8v4h-4.8V2.1zm10.4 10.2c0 2.4 1.8 3.7 4.1 3.7 1.5 0 2.8-.4 3.7-.9v3.3c-1.2.5-2.7 1-4.6 1-4.8 0-8-2.9-8-7.8 0-4.5 3.1-7.8 7.7-7.8 4.8 0 7.4 3.5 7.4 7.7 0 .3 0 .7-.1.8h-10.2zm5.8-2.6c0-1.7-.9-2.7-2.6-2.7-1.7 0-2.7 1.2-3 2.7h5.6z" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Stripe</span>
+            <span class="payment-card-tag">Multi-Currency Gateway</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> 135+ Currencies</span>
+          </div>
+        </div>
+
+        <!-- 4. PayPal -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box">
+            <svg width="34" height="26" viewBox="0 0 28 22" fill="none">
+              <path d="M10.2 2H3.5C3.1 2 2.7 2.3 2.6 2.7L0.2 18.2C0.1 18.5 0.4 18.8 0.7 18.8H4.6C5 18.8 5.4 18.5 5.5 18.1L6.5 11.7C6.6 11.3 7 11 7.4 11H9.6C13.4 11 16.1 9.5 16.9 5.7C17.3 3.9 16.6 2 10.2 2Z" fill="#003087"/>
+              <path d="M15.4 6.5C15 8.4 13.5 9.7 11.2 9.7H9C8.6 9.7 8.2 10 8.1 10.4L6.8 18.6C6.7 19 7 19.3 7.4 19.3H10.7C11.1 19.3 11.5 19 11.6 18.6L12.4 13.4C12.5 13 12.9 12.7 13.3 12.7H14.1C17.2 12.7 19.6 11.4 20.3 7.6C20.6 6.1 20.1 4.8 18.8 4.1C17.6 5.3 16.2 6.1 15.4 6.5Z" fill="#0079C1"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">PayPal</span>
+            <span class="payment-card-tag">International Checkout</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Buyer Protection</span>
+          </div>
+        </div>
+
+        <!-- 5. Apple Pay -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box" style="background:#000000; border-color:#222;">
+            <svg width="40" height="24" viewBox="0 0 46 20" fill="none">
+              <path d="M5.8 4.5C6.6 3.6 7.1 2.3 6.9 1.1C5.8 1.1 4.5 1.8 3.8 2.7C3.1 3.5 2.5 4.8 2.7 6C3.9 6.1 5.1 5.3 5.8 4.5ZM6.9 6.2C5 6.2 4.1 7.4 2.8 7.4C1.5 7.4 0.4 6.4 0.4 6.4C-0.4 7.7 -0.1 10.3 1 12C1.6 13 2.4 14 3.5 14C4.6 14 5.1 13.2 6.5 13.2C7.9 13.2 8.3 14 9.5 14C10.6 14 11.4 12.9 12 11.9C12.8 10.9 13.1 9.8 13.1 9.7C13 9.7 10.6 8.7 10.6 6.3C10.6 4.3 12.3 3.3 12.4 3.1C11.4 1.7 9.9 1.5 9.4 1.5C8 1.5 7.3 2.5 6.9 6.2Z" fill="#FFFFFF"/>
+              <text x="17" y="14.5" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="13" letter-spacing="0.5">Pay</text>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Apple Pay</span>
+            <span class="payment-card-tag">One-Touch Biometric</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Face ID / Touch ID</span>
+          </div>
+        </div>
+
+        <!-- 6. Google Pay -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box" style="background:#FFFFFF; border-color:#E5E7EB;">
+            <svg width="44" height="24" viewBox="0 0 48 20" fill="none">
+              <path d="M9.5 8.3V11.5H16.2C15.6 13.5 13.8 14.8 11.5 14.8C8.6 14.8 6.3 12.4 6.3 9.5C6.3 6.6 8.6 4.2 11.5 4.2C12.8 4.2 13.9 4.7 14.8 5.5L17.1 3.2C15.6 1.8 13.7 1 11.5 1C6.8 1 3 4.8 3 9.5C3 14.2 6.8 18 11.5 18C16.4 18 19.6 14.5 19.6 9.7C19.6 9 19.5 8.4 19.4 7.8L9.5 8.3Z" fill="#4285F4"/>
+              <text x="22" y="14" fill="#3C4043" font-family="'Inter', sans-serif" font-weight="700" font-size="12" letter-spacing="0.5">Pay</text>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Google Pay</span>
+            <span class="payment-card-tag">Instant Checkout</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Encrypted Token</span>
+          </div>
+        </div>
+
+        <!-- 7. Bank Alfalah (Alfa) -->
+        <div class="payment-card-badge" style="border-color: rgba(237, 28, 36, 0.25);">
+          <div class="payment-logo-box" style="background-color: #ED1C24; border-color:#ED1C24;">
+            <svg width="36" height="26" viewBox="0 0 48 32" fill="none">
+              <circle cx="24" cy="16" r="11" fill="#FFFFFF"/>
+              <circle cx="27" cy="16" r="9" fill="#ED1C24"/>
+              <polygon points="21,11 26,16 21,21" fill="#FFFFFF"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Bank Alfalah</span>
+            <span class="payment-card-tag">Alfa & Direct IBAN</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Instant Bank Transfer</span>
+          </div>
+        </div>
+
+        <!-- 8. Easypaisa -->
+        <div class="payment-card-badge" style="border-color: rgba(0, 166, 81, 0.25);">
+          <div class="payment-logo-box" style="background-color: #00A651; border-color:#00A651;">
+            <svg width="36" height="26" viewBox="0 0 48 32" fill="none">
+              <circle cx="24" cy="16" r="11" fill="#FFFFFF"/>
+              <path d="M21 16c0-2.2 1.8-4 4-4s4 1.8 4 4h-6.5c.2 1.3 1.3 2.2 2.5 2.2 1 0 1.8-.5 2.2-1.2l1.6.8c-.8 1.4-2.2 2.2-3.8 2.2-2.2 0-4-1.8-4-4zm4-2.2c-1.1 0-2 .8-2.2 2.2h4.4c-.2-1.4-1.1-2.2-2.2-2.2z" fill="#00A651"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Easypaisa</span>
+            <span class="payment-card-tag">Mobile Wallet & QR</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Zero Delay</span>
+          </div>
+        </div>
+
+        <!-- 9. JazzCash -->
+        <div class="payment-card-badge" style="border-color: rgba(227, 27, 35, 0.25);">
+          <div class="payment-logo-box" style="background-color: #E31B23; border-color:#E31B23;">
+            <svg width="36" height="26" viewBox="0 0 48 32" fill="none">
+              <rect width="48" height="32" rx="4" fill="#E31B23"/>
+              <circle cx="18" cy="16" r="8" fill="#FFC20E"/>
+              <circle cx="30" cy="16" r="8" fill="#0A0A0C"/>
+              <text x="24" y="19" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="900" fill="#FFFFFF" text-anchor="middle">JC</text>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">JazzCash</span>
+            <span class="payment-card-tag">Mobile Wallet & Till</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Instant Notification</span>
+          </div>
+        </div>
+
+        <!-- 10. Wise -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box" style="background-color: #163300; border-color:#163300;">
+            <svg width="36" height="26" viewBox="0 0 48 32" fill="none">
+              <rect width="48" height="32" rx="4" fill="#163300"/>
+              <path d="M16 11l6 10h5l-4-6.5h7l-2-3.5h-12z" fill="#9FE870"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Wise</span>
+            <span class="payment-card-tag">Global Bank Transfers</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Real Mid-Market Rate</span>
+          </div>
+        </div>
+
+        <!-- 11. Raast / Direct Wire -->
+        <div class="payment-card-badge">
+          <div class="payment-logo-box" style="background-color: #0A0A0C; border-color:#222;">
+            <svg width="36" height="26" viewBox="0 0 48 32" fill="none">
+              <rect width="48" height="32" rx="4" fill="#0A0A0C"/>
+              <path d="M14 22h20v2H14v-2zm10-15l-9 5v2h18v-2l-9-5zm-7 9h2v4h-2v-4zm5 0h2v4h-2v-4zm5 0h2v4h-2v-4z" fill="#C5A880"/>
+            </svg>
+          </div>
+          <div class="payment-card-info">
+            <span class="payment-card-name">Raast / Bank Wire</span>
+            <span class="payment-card-tag">SBP Raast & SWIFT</span>
+            <span class="payment-card-status"><span class="status-dot-pulse"></span> Corporate Invoicing</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="payment-disclaimer">
+        AVAILABLE PAYMENT METHODS MAY VARY BY REGION • PROFESSIONAL COMMERCIAL INVOICES ISSUED FOR ALL TRANSACTIONS
+      </div>
+
+      <div class="trust-indicators-strip">
+        <div class="trust-indicator-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 0 0-6 0v2a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/></svg>
+          SECURE ENCRYPTED PAYMENTS
+        </div>
+        <div class="trust-indicator-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/></svg>
+          5+ GLOBAL CURRENCIES
+        </div>
+        <div class="trust-indicator-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/></svg>
+          PROFESSIONAL TAX INVOICING
+        </div>
+        <div class="trust-indicator-item">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM1 8a7 7 0 0 1 12.93-3.618L5.5 12.812A6.973 6.973 0 0 1 1 8z"/></svg>
+          INTERNATIONAL & DOMESTIC CLIENTS
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 20: TESTIMONIALS (CMS-READY)
+       ========================================================================== -->
+  <section class="testimonials-section section-padding">
+    <div class="container">
+      
+      <div class="section-header-block">
+        <div class="section-eyebrow">VERIFIED REVIEWS</div>
+        <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+        <p class="section-subtitle">
+          Real client evaluations from international enterprise engagements across North America, the UK, UAE, and Pakistan.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “AVENZIA did not just redesign our digital platform — they completely transformed how our international clients perceive our enterprise. Their technological rigor and visual aesthetics set them apart from standard agencies.”
+          </p>
+          <div class="testimonial-author-meta">
+            <div class="author-avatar-placeholder">TK</div>
+            <div>
+              <div class="author-name">Tariq Khan</div>
+              <div class="author-role">Director of Strategy, Apex Logistics</div>
+              <div class="author-country">Dubai, UAE • Web & Systems</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “The AI lead qualification system engineered by AVENZIA now processes our inbound inquiries 24/7. Response lag dropped from 4 hours to 12 seconds, resulting in immediate measurable gains in client satisfaction.”
+          </p>
+          <div class="testimonial-author-meta">
+            <div class="author-avatar-placeholder">MR</div>
+            <div>
+              <div class="author-name">Marcus Reed</div>
+              <div class="author-role">Founder & CEO, NorthPoint Digital</div>
+              <div class="author-country">London, UK • AI Automation</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “From branding architecture to complex web application development, AVENZIA delivered on time with impeccable attention to detail. Having multi-currency billing and direct WhatsApp support made collaboration frictionless.”
+          </p>
+          <div class="testimonial-author-meta">
+            <div class="author-avatar-placeholder">SN</div>
+            <div>
+              <div class="author-name">Sarah Nichols</div>
+              <div class="author-role">Head of Product, Veloce Ventures</div>
+              <div class="author-country">Toronto, Canada • SaaS Product</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 21, 22, 23: DRAMATIC GLOBAL CONTACT & PROJECT INQUIRY PORTAL
+       ========================================================================== -->
+  <section class="contact-hero-section section-padding" id="contact">
+    <!-- Ambient Floating Light Orbs -->
+    <div class="ambient-glow-orb orb-primary"></div>
+    <div class="ambient-glow-orb orb-secondary"></div>
+
+    <div class="container" style="position:relative; z-index:2;">
+      
+      <!-- Section 21: Dramatic CTA Intro -->
+      <div class="contact-hero-inner">
+        <div class="section-eyebrow dark-mode">INITIATE ENGAGEMENT</div>
+        <h2 class="contact-hero-title">READY TO BUILD WHAT'S NEXT?</h2>
+        <p class="contact-hero-desc">
+          Whether you need a new brand, digital product, website, SaaS platform or intelligent AI automation system, let's build it together.
+        </p>
+        <div class="contact-cta-buttons">
+          <a href="#inquiryCard" class="btn btn-gold">START A PROJECT →</a>
+          <a href="#inquiryCard" class="btn btn-outline-light">BUILD MY AI SYSTEM →</a>
+        </div>
+      </div>
+
+      <!-- Section 22 & 23: Form & Contact Details Wrapper -->
+      <div class="contact-form-wrapper-card" id="inquiryCard">
+        <div class="contact-grid-split">
+          
+          <!-- Contact Details (Section 23) -->
+          <div class="contact-info-col">
+            <div>
+              <h3 class="contact-brand-title">AVENZIA</h3>
+              <div class="contact-brand-tagline">CREATIVE • DIGITAL • AGENCY</div>
+              
+              <div class="contact-detail-box">
+                <div class="contact-detail-label">Direct Executive Hotline / WhatsApp</div>
+                <a href="https://wa.me/923432782604" target="_blank" rel="noopener noreferrer" class="contact-phone-number">
+                  +92 343 2782604
+                </a>
+                <a href="https://wa.me/923432782604" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-sm">
+                  WHATSAPP AVENZIA →
+                </a>
+              </div>
+            </div>
+
+            <div class="global-ops-strip">
+              <div class="global-ops-title">GLOBAL OPERATIONS</div>
+              <div class="global-ops-regions">
+                Pakistan • United States • Canada • United Kingdom • UAE • Europe
+              </div>
+              <p style="font-size:0.75rem; color:var(--color-text-inverse-subtle); margin-top:0.75rem;">
+                Decentralized creative and engineering nodes delivering across international time zones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form (Section 22) -->
+          <div>
+            <h3 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 0.5rem; color: #FFFFFF;">TELL US WHAT YOU'RE BUILDING.</h3>
+            <p style="font-size: 0.875rem; color: var(--color-text-inverse-subtle); margin-bottom: 2rem;">
+              Fill in your specifications below. Our executive team will review your project parameters within 24 hours.
+            </p>
+
+            <form class="inquiry-form" id="inquiryForm">
+              
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="companyName" class="form-label">Company / Organization</label>
+                <input type="text" id="companyName" class="form-control" placeholder="e.g. Acme Corp">
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Work Email *</label>
+                <input type="email" id="emailAddress" class="form-control" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone / WhatsApp</label>
+                <input type="tel" id="phoneNumber" class="form-control" placeholder="+1 (555) 000-0000">
+              </div>
+
+              <div class="form-group">
+                <label for="countryName" class="form-label">Country / Region</label>
+                <input type="text" id="countryName" class="form-control" placeholder="e.g. United States, UAE">
+              </div>
+
+              <div class="form-group">
+                <label for="serviceSelect" class="form-label">Required Service *</label>
+                <select id="serviceSelect" class="form-control" required>
+                  <option value="" disabled selected>Select a Capability</option>
+                  <option value="Branding">Branding & Visual Identity</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Web Application">Web Application</option>
+                  <option value="SaaS">SaaS Platform</option>
+                  <option value="UI/UX">UI/UX Design</option>
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="Social Media">Social Media Management</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="AI Automation">AI Automation (Full Suite)</option>
+                  <option value="AI Chatbot">AI Chatbot / Customer Assistant</option>
+                  <option value="AI Agent">Autonomous AI Agent</option>
+                  <option value="Workflow Automation">Workflow Automation</option>
+                  <option value="Custom AI System">Custom AI System</option>
+                  <option value="Other">Other Custom Digital Solution</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="budgetSelect" class="form-label">Estimated Project Budget *</label>
+                <select id="budgetSelect" class="form-control" required>
+                  <option value="" disabled selected>Select Budget Range</option>
+                  <option value="Under $500">Under $500</option>
+                  <option value="$500 – $1,000">$500 – $1,000</option>
+                  <option value="$1,000 – $2,500">$1,000 – $2,500</option>
+                  <option value="$2,500 – $5,000">$2,500 – $5,000</option>
+                  <option value="$5,000+">$5,000+</option>
+                  <option value="Enterprise / Custom">Enterprise / Custom</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="projectDetails" class="form-label">Project Details & Objectives</label>
+                <textarea id="projectDetails" class="form-control" placeholder="Describe what you want to achieve, timeline targets, existing platforms or workflows..."></textarea>
+              </div>
+
+              <div class="form-status-box" id="formStatus"></div>
+
+              <div class="form-group full-width" style="margin-top: 0.5rem;">
+                <button type="submit" class="btn btn-gold" style="width: 100%;">
+                  SEND PROJECT INQUIRY →
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       SECTION 24: MEGA CORPORATE FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Col 1: Brand -->
+        <div class="footer-brand-col">
+          <img src="assets/logo-light.png" alt="AVENZIA">
+          <div class="footer-tagline">CREATIVE • DIGITAL • AGENCY</div>
+          <p class="footer-desc">
+            We build brands, digital experiences, intelligent systems and AI-powered solutions for ambitious businesses worldwide.
+          </p>
+          <div class="footer-social-strip">
+            <a href="#home" class="social-icon-link" aria-label="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="#home" class="social-icon-link" aria-label="Instagram">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#home" class="social-icon-link" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+            </a>
+            <a href="#home" class="social-icon-link" aria-label="YouTube">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Company -->
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about">About AVENZIA</a></li>
+            <li><a href="#services">Capabilities</a></li>
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#pricing">Pricing Architecture</a></li>
+            <li><a href="#contact">Contact & Inquiries</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Capabilities -->
+        <div>
+          <h4 class="footer-col-title">Capabilities</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Branding</a></li>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Web Apps</a></li>
+            <li><a href="#services">SaaS Products</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">E-commerce</a></li>
+            <li><a href="#services">Digital Marketing</a></li>
+            <li><a href="#ai-automation">AI Automation</a></li>
+            <li><a href="#ai-automation">AI Agents</a></li>
+            <li><a href="#ai-automation">Business Automation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Global Presence -->
+        <div>
+          <h4 class="footer-col-title">Global Operations</h4>
+          <ul class="footer-links-list">
+            <li><span style="color:#fff;">🇵🇰 Pakistan</span></li>
+            <li><span style="color:#fff;">🇺🇸 United States</span></li>
+            <li><span style="color:#fff;">🇨🇦 Canada</span></li>
+            <li><span style="color:#fff;">🇬🇧 United Kingdom</span></li>
+            <li><span style="color:#fff;">🇦🇪 UAE</span></li>
+            <li><span style="color:#fff;">🇪🇺 Europe</span></li>
+            <li style="margin-top: 1rem;">
+              <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--color-champagne);">DIRECT HOTLINE:</span><br>
+              <a href="https://wa.me/923432782604" target="_blank" rel="noopener noreferrer" style="font-weight:700; color:#fff;">+92 343 2782604</a>
+            </li>
+          </ul>
+        </div>
+
+      </div> <!-- Closes .footer-top-grid -->
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 2026 AVENZIA. ALL RIGHTS RESERVED.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms & Conditions</a>
+          <a href="#cookies">Cookie Policy</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+       MODAL SYSTEM (FOR CASE STUDIES & ARCHITECTURE DEEP-DIVE)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="caseModal">
+    <div class="modal-content-box">
+      <button type="button" class="modal-close-btn" id="closeCaseModalBtn" aria-label="Close Modal">✕</button>
+      <div id="modalCaseDetails"></div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Master JavaScript Logic -->
+  <script src="js/main.js"></script>
+</body>
+</html>
